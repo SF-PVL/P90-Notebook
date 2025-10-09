@@ -15,7 +15,7 @@ The P90 client helps solar energy analysts and engineers:
 
 - `P90 Analysis.ipynb` - Core Jupyter notebook containing the workflow to run uncertainty analysis on your system
 - `UncertaintyFunctions.ipynb` - Helper Jupyter notebook containing Python functions for uncertainty analysis
-- `pvl_p90_client-0.1.0.142+dev-py3-none-any.whl` - P90 client Python package
+- `pvl_p90_client-0.1.0.156+dev-py3-none-any.whl` - P90 client Python package
 - `Data/` - Directory containing sample data files (e.g., `sydney.pvw`)
 - `pvlib_P90_Comparison.ipynb` - Auxilliary Jupyter notebook containing a validation of the P90 client against pvlib
 - `SunSolveLogo.svg` - SunSolve branding assets
@@ -24,7 +24,7 @@ The P90 client helps solar energy analysts and engineers:
 
 This repository is designed to be cloned directly within a Jupyter notebook environment. The typical workflow is:
 
-1. Clone this repository into your Jupyter environment
+1. Clone this repository into your Jupyter environment `git clone https://github.com/SF-PVL/P90-Notebook.git`
 2. Install the P90 client package from the included wheel file
 3. Open and run `UncertaintyFunctions.ipynb`
 4. Use the functions defined in the notebook to analyze your PV yield data
@@ -36,7 +36,7 @@ The `P90 Analysis.ipynb` notebook contains a full worked example for how to use 
 
 ```python
 # Install the P90 client package
-!pip install pvl_p90_client-0.1.0.142+dev-py3-none-any.whl
+!pip install pvl_p90_client-0.1.0.156+dev-py3-none-any.whl
 
 # Load the uncertainty functions notebook
 %run UncertaintyFunctions.ipynb
@@ -49,6 +49,7 @@ The functions in `UncertaintyFunctions.ipynb` provide tools for:
 - Running uncertainty simulations
 - Plotting results and uncertainty distributions
 - Calculating P90 and other percentile estimates
+- Comparing P90 results to pvlib result in `pvlib_P90_Comparison.ipynb`
 
 ## About SunSolve
 
