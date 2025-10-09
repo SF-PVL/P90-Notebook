@@ -25,10 +25,11 @@ The P90 client helps solar energy analysts and engineers:
 This repository is designed to be cloned directly within a Jupyter notebook environment. The typical workflow is:
 
 1. Clone this repository into your Jupyter environment `git clone https://github.com/SF-PVL/P90-Notebook.git`
-2. Install the P90 client package from the included wheel file
-3. Open and run `UncertaintyFunctions.ipynb`
-4. Use the functions defined in the notebook to analyze your PV yield data
-5. Generate plots and visualizations of uncertainty results
+2. Open `P90 Analysis.ipynb`
+3. Run the initial cells, adjusting inputs as you go
+4. When prompted, enter your pvlighthouse login details (VS Code will prompt you in the search bar)
+5. Use the functions defined in the notebook to analyze your PV yield data in the remaining cells
+6. Generate plots and visualizations of uncertainty results
 
 ## Getting Started
 
