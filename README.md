@@ -22,7 +22,7 @@ The P90 client helps solar energy analysts and engineers:
 
 ## Usage
 
-This repository is designed to be cloned directly within a Jupyter notebook environment. The typical workflow is:
+This repository is designed to be cloned directly within a Jupyter notebook environment (you may also simply [download it](https://github.com/SF-PVL/P90-Notebook/archive/refs/heads/main.zip) instead). The typical workflow is:
 
 1. Clone this repository into your Jupyter environment `git clone https://github.com/SF-PVL/P90-Notebook.git`
 2. Open `P90 Analysis.ipynb`
