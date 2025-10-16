@@ -15,42 +15,50 @@ The P90 client helps solar energy analysts and engineers:
 
 - `P90 Analysis.ipynb` - Core Jupyter notebook containing the workflow to run uncertainty analysis on your system
 - `UncertaintyFunctions.ipynb` - Helper Jupyter notebook containing Python functions for uncertainty analysis
-- `pvl_p90_client-0.1.0.156+dev-py3-none-any.whl` - P90 client Python package
+- `pvl_p90_client-0.1.0.158+prerelease-py3-none-any.whl` - P90 client Python package
 - `Data/` - Directory containing sample data files (e.g., `sydney.pvw`)
 - `pvlib_P90_Comparison.ipynb` - Auxilliary Jupyter notebook containing a validation of the P90 client against pvlib
 - `SunSolveLogo.svg` - SunSolve branding assets
 
-## Usage
-
-This repository is designed to be cloned directly within a Jupyter notebook environment (you may also simply [download it](https://github.com/SF-PVL/P90-Notebook/archive/refs/heads/main.zip) instead). The typical workflow is:
-
-1. Clone this repository into your Jupyter environment `git clone https://github.com/SF-PVL/P90-Notebook.git`
-2. Open `P90 Analysis.ipynb`
-3. Run the initial cells, adjusting inputs as you go
-4. When prompted, enter your pvlighthouse login details (VS Code will prompt you in the search bar)
-5. Use the functions defined in the notebook to analyze your PV yield data in the remaining cells
-6. Generate plots and visualizations of uncertainty results
+## Requirements
+* Google Colab; OR the below:
+* Python 3+ (https://www.python.org/downloads/)
+* pip 20+ (https://pypi.org/project/pip/ )
+* Jupyter (run `pip install jupyter` from terminal)
+* numpy, scipy, matplotlib, plotly, pandas (run `pip install numpy scipy matplotlib plotly pandas` from terminal)
+* git (for cloning the repository, alternatively you may just [download it](https://github.com/SF-PVL/P90-Notebook/archive/refs/heads/main.zip) manually)
 
 ## Getting Started
 
-The `P90 Analysis.ipynb` notebook contains a full worked example for how to use the P90 client. Alternatively, you can follow the below steps:
+### Using Google Colab
 
-```python
-# Install the P90 client package
-!pip install pvl_p90_client-0.1.0.156+dev-py3-none-any.whl
+Follow steps in [colab.research.google.com/github/SF-PVL/P90-Notebook](https://colab.research.google.com/github/SF-PVL/P90-Notebook/blob/main/P90%20Analysis.ipynb) and avoid `USING_DRIVE` for the simplest experience.
 
-# Load the uncertainty functions notebook
-%run UncertaintyFunctions.ipynb
+To save files, you will need to use connect to Google Drive and change the folder variable to the Drive folder of your choice. Also change `USING_DRIVE` to `True`.
 
-# Your uncertainty analysis code here...
-```
+You can always just save files manually without Drive, but they will be lost forever if the session times out from inactivity (90 minutes).
 
-The functions in `UncertaintyFunctions.ipynb` provide tools for:
-- Loading and preprocessing PV yield data
-- Running uncertainty simulations
-- Plotting results and uncertainty distributions
-- Calculating P90 and other percentile estimates
-- Comparing P90 results to pvlib result in `pvlib_P90_Comparison.ipynb`
+### Using Jupyter and Python locally
+
+Assuming you have installed all requirements:
+
+[Download](https://github.com/SF-PVL/P90-Notebook/archive/refs/heads/main.zip) (or clone) the SunSolve P90 GitHub repository into your preferred folder.
+(`git clone https://github.com/SF-PVL/P90-Notebook.git`)
+
+From this folder run  jupyter notebook from a terminal to start the notebook app in-browser.
+(**VS Code users**: skip this step)
+
+From the notebook app, open the P90 Analysis.ipynb notebook.
+(**VS Code users**: simply open the notebook and choose a kernel when prompted. ‘venv’ is default)
+
+Run the initial cells, adjusting inputs as you go.
+
+When prompted, enter your PV Lighthouse login details in the prompt below **Code cell 1**.
+(**VS Code users**: prompt appears in the search bar at the top of the window)
+
+Use the functions defined in the notebook to analyse your PV yield data in the remaining cells.
+
+Generate plots and visualizations of uncertainty results.
 
 ## About SunSolve
 
