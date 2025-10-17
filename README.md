@@ -15,13 +15,13 @@ The P90 client helps solar energy analysts and engineers:
 
 - `P90 Analysis.ipynb` - Core Jupyter notebook containing the workflow to run uncertainty analysis on your system
 - `UncertaintyFunctions.ipynb` - Helper Jupyter notebook containing Python functions for uncertainty analysis
-- `pvl_p90_client-0.1.0.158+prerelease-py3-none-any.whl` - P90 client Python package
+- `pvl_p90_client-0.1.0.167+prerelease-py3-none-any.whl` - P90 client Python package
 - `Data/` - Directory containing sample data files (e.g., `sydney.pvw`)
 - `pvlib_P90_Comparison.ipynb` - Auxilliary Jupyter notebook containing a validation of the P90 client against pvlib
 - `SunSolveLogo.svg` - SunSolve branding assets
 
 ## Requirements
-* Google Colab; OR the below:
+* Google Colab; **OR** the below:
 * Python 3+ (https://www.python.org/downloads/)
 * pip 20+ (https://pypi.org/project/pip/ )
 * Jupyter (run `pip install jupyter` from terminal)
